@@ -266,7 +266,7 @@
                </div>
                <div class="col-md-8">
                  <div class="contact-area-right">
-                   <form id="reused_form" class="comments-form contact-form">
+                   <form id="reused_form" class="comments-form contact-form" action="javascript:onSubmitContactForm(this)">
                     <div class="form-group">                        
                       <input type="text"  name="name" class="form-control" placeholder="Your Name">
                     </div>
@@ -404,13 +404,13 @@
         }//else
     }
 
-	$('#reused_form').submit(function(e)
+	function onSubmitContactForm(form) 
       {
         e.preventDefault();
 
-        $form = $(this);
+        
         //show some response on the button
-        $('button[type="submit"]', $form).each(function()
+        $('button[type="submit"]', form).each(function()
         {
             $btn = $(this);
             $btn.prop('type','button' );
@@ -422,12 +422,12 @@
                     $.ajax({
                 type: "POST",
                 url: 'handler.php',
-                data: $form.serialize(),
+                data: form.serialize(),
                 success: after_form_submitted,
                 dataType: 'json'
             });
 
-      });
+      }
 
 </script>
     
