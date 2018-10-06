@@ -266,21 +266,25 @@
                </div>
                <div class="col-md-8">
                  <div class="contact-area-right">
-                   <form action="action="mailto:jaspal.singh300780@gmail.com" class="comments-form contact-form">
+                   <form id="reused_form" action="mailto:jaspal.singh300780@gmail.com" class="comments-form contact-form">
                     <div class="form-group">                        
-                      <input type="text" class="form-control" placeholder="Your Name">
+                      <input type="text"  name="name" class="form-control" placeholder="Your Name">
                     </div>
                     <div class="form-group">                        
-                      <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                     <div class="form-group">                        
-                      <input type="text" class="form-control" placeholder="Subject">
+                      <input type="email" name="email" class="form-control" placeholder="Email">
                     </div>
                     <div class="form-group">                        
-                      <textarea placeholder="Comment" rows="3" class="form-control"></textarea>
+                      <textarea name="message" placeholder="Comment" rows="3" class="form-control"></textarea>
                     </div>
                     <button class="comment-btn">Submit Comment</button>
                   </form>
+				  <div id="error_message" style="width:100%; height:100%; display:none; ">
+						<h4>Error</h4>
+						Sorry there was an error sending your form.
+						</div>
+						<div id="success_message" style="width:100%; height:100%; display:none; ">
+						<h2>Success! Your Message was Sent Successfully.</h2>
+						</div>
                  </div>
                </div>
              </div>
@@ -339,7 +343,70 @@
     </div>
   </footer>
   <!-- End footer -->
+<script>
+$(function()
+{
+    function after_form_submitted(data)
+    {
+        if(data.result == 'success')
+        {
+            $('form#reused_form').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
+        }
+        else
+        {
+            $('#error_message').append('<ul></ul>');
 
+            jQuery.each(data.errors,function(key,val)
+            {
+                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function()
+            {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' );
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
+
+        }//else
+    }
+
+	$('#reused_form').submit(function(e)
+      {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function()
+        {
+            $btn = $(this);
+            $btn.prop('type','button' );
+            $btn.prop('orig_label',$btn.text());
+            $btn.text('Sending ...');
+        });
+
+
+                    $.ajax({
+                type: "POST",
+                url: 'handler.php',
+                data: $form.serialize(),
+                success: after_form_submitted,
+                dataType: 'json'
+            });
+
+      });
+});
+</script>
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
   <!-- Include all compiled plugins (below), or include individual files as needed -->
