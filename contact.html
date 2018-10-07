@@ -240,7 +240,7 @@
            <div class="title-area">
               <h2 class="title">Have any Questions?</h2>
               <span class="line"></span>
-              <p>Contact us via email and we shall reply you back in 24hrs.</p>
+              <p>Contact us via email or contact us form and we shall reply you back in 24hrs.</p>
             </div>
          </div>
          <div class="col-md-12">
@@ -249,7 +249,7 @@
                <div class="col-md-4">
                  <div class="contact-area-left">
                    <h4>Contact Info</h4>
-                   <p>Sales Team</p>
+                   <p></p>
                    <address class="single-address">
                      <p>Line No 13, Sakchi , Kalimati Road, Angel Guest House, Near Sakchi Gurudwara, Jamshedpur -831001</p>
                      <p>info@allybase.com</p>
@@ -264,9 +264,10 @@
                     </div>                
                  </div>
                </div>
-               <!-- <div class="col-md-8">
+                <div class="col-md-8">
                  <div class="contact-area-right">
-                   <form id="reused_form" class="comments-form contact-form" action="javascript:onSubmitContactForm(this)">
+					<iframe src="https://www.powr.io/plugins/contact-form/view?unique_label=5630e608_1538934715&external_type=iframe" width="100%" height="600" frameborder="0"></iframe>
+                   <!--<form id="reused_form" class="comments-form contact-form" action="javascript:onSubmitContactForm(this)">
                     <div class="form-group">                        
                       <input type="text"  name="name" class="form-control" placeholder="Your Name">
                     </div>
@@ -277,7 +278,7 @@
                       <textarea name="message" placeholder="Comment" rows="3" class="form-control"></textarea>
                     </div>
                     <button class="comment-btn">Submit Comment</button>
-                  </form>
+                  </form> -->
 				  <div id="error_message" style="width:100%; height:100%; display:none; ">
 						<h4>Error</h4>
 						Sorry there was an error sending your form.
@@ -286,7 +287,7 @@
 						<h2>Success! Your Message was Sent Successfully.</h2>
 						</div>
                  </div>
-               </div> -->
+               </div> 
              </div>
            </div>
          </div>
@@ -367,69 +368,7 @@
   <!-- Custom js -->
   <script type="text/javascript" src="assets/js/custom.js"></script>
   
-  <script>
-
-    function after_form_submitted(data)
-    {
-        if(data.result == 'success')
-        {
-            $('form#reused_form').hide();
-            $('#success_message').show();
-            $('#error_message').hide();
-        }
-        else
-        {
-            $('#error_message').append('<ul></ul>');
-
-            jQuery.each(data.errors,function(key,val)
-            {
-                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
-            });
-            $('#success_message').hide();
-            $('#error_message').show();
-
-            //reverse the response on the button
-            $('button[type="button"]', $form).each(function()
-            {
-                $btn = $(this);
-                label = $btn.prop('orig_label');
-                if(label)
-                {
-                    $btn.prop('type','submit' );
-                    $btn.text(label);
-                    $btn.prop('orig_label','');
-                }
-            });
-
-        }//else
-    }
-
-	function onSubmitContactForm(form) 
-      {
-        e.preventDefault();
-
-        
-        //show some response on the button
-        $('button[type="submit"]', form).each(function()
-        {
-            $btn = $(this);
-            $btn.prop('type','button' );
-            $btn.prop('orig_label',$btn.text());
-            $btn.text('Sending ...');
-        });
-
-
-                    $.ajax({
-                type: "POST",
-                url: 'handler.php',
-                data: form.serialize(),
-                success: after_form_submitted,
-                dataType: 'json'
-            });
-
-      }
-
-</script>
+ 
     
   </body>
 </html>
