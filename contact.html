@@ -184,7 +184,8 @@
             <li><a href="index.html">Home</a></li>
             <!--<li><a href="feature.html">Feature</a></li> -->
             <li><a href="service.html">Service</a></li>
-          <!--  <li><a href="portfolio.html">Portfolio</a></li> -->
+			<li><a href="categories.html">Categories</a></li>
+            <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
             <!--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -266,8 +267,11 @@
                </div>
                 <div class="col-md-8">
                  <div class="contact-area-right">
-					<script type="text/javascript" src="https://form.jotformeu.com/jsform/82795601108357"></script>
-					<!--<iframe src="https://form.jotformeu.com/82795601108357" width="100%" height="600"  frameborder="0"></iframe> -->
+					<!--JOT Form Start -->
+					<script type="text/javascript" src="https://form.jotformeu.com/jsform/82795601108357"></script> 
+					
+					<!--JOT FORM Ends -->
+					
                    <!--<form id="reused_form" class="comments-form contact-form" action="javascript:onSubmitContactForm(this)">
                     <div class="form-group">                        
                       <input type="text"  name="name" class="form-control" placeholder="Your Name">
@@ -369,7 +373,12 @@
   <!-- Custom js -->
   <script type="text/javascript" src="assets/js/custom.js"></script>
   
- 
+	<script>
+	$( document ).ready(function() {
+	alert('trst');
+	setTimeout("$('#formFooter').css('display', 'none');", 3000);
+    	});
+	</script>
     
   </body>
 </html>
