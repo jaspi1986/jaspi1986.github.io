@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>List Business Software at AllyBase</title>
-	<meta name="description" content="Software Vendors - Create your profile on AllyBase and get listed among best software." />
+    <title>AllyBase : Home</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -55,107 +54,982 @@
 
   <!-- Start header -->
   <header id="header">
-   
-   <!-- BEGIN MENU -->
+    <!-- header top search -->
+    <div class="header-top">
+      <div class="container">
+        <form action="">
+          <div id="search">
+          <input type="text" placeholder="Type your search keyword here and hit Enter..." name="s" id="m_search" style="display: inline-block;">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+    <!-- header bottom -->
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-contact">
+               <ul>
+                <li>
+                 <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    +91-8789154829
+                  </div>
+                </li>
+                <li>
+                  <div class="mail">
+                    <i class="fa fa-envelope"></i>
+                    info@allybase.com
+                  </div>
+                </li>
+                </ul>
+            </div>
+          </div>
+         <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-login">
+				 <a class="login modal-form" href="contact.html"><b>FREE QUOTE</b></a>
+              <!--<a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Login / Sign Up</a> -->
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header -->
+  
+  <!-- Start login modal window -->
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <!-- Start login section -->
+      <div id="login-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="User name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+             <div class="loginbox">
+              <label><input type="checkbox"><span>Remember me</span></label>
+              <button class="btn signin-btn" type="button">SIGN IN</button>
+            </div>                    
+          </form>
+        </div>
+        <div class="modal-footer footer-box">
+          <a href="#">Forgot password ?</a>
+          <span>No account ? <a id="signup-btn" href="#">Sign Up.</a></span>            
+        </div>
+      </div>
+      <!-- Start signup section -->
+      <div id="signup-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-lock"></i>Sign Up</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input placeholder="Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Username" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <div class="signupbox">
+              <span>Already got account? <a id="login-btn" href="#">Sign In.</a></span>
+            </div>
+            <div class="loginbox">
+              <label><input type="checkbox"><span>Remember me</span><i class="fa"></i></label>
+              <button class="btn signin-btn" type="button">SIGN UP</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End login modal window -->
+
+  <!-- BEGIN MENU -->
   <section id="menu-area">      
     <nav class="navbar navbar-default" role="navigation">  
       <div class="container">
         <div class="navbar-header">
-          
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <!-- LOGO -->              
           <!-- TEXT BASED LOGO -->
-          <a class="navbar-brand" href="index.html">AllyBase</a>               
+          <a class="navbar-brand" href="index.html">AllyBase</a>              
           <!-- IMG BASED LOGO  -->
-            <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="AllyBase"></a> -->
+           <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
         </div>
-       
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+           <!-- <li><a href="feature.html">Feature</a></li> -->
+            <li><a href="service.html">Service</a></li>
+            <li><a href="technology.html">Technology</a></li>
+           <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+          <!--   <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="blog-archive.html">Blog Archive</a></li>                
+                <li><a href="blog-single-with-left-sidebar.html">Blog Single with Left Sidebar</a></li>
+                <li><a href="blog-single-with-right-sidebar.html">Blog Single with Right Sidebar</a></li>
+                <li><a href="blog-single-with-out-sidebar.html">Blog Single with out Sidebar</a></li>           
+              </ul>
+            </li> -->
+         <!--   <li><a href="404.html">404 Page</a></li>   -->            
+            <li><a href="contact.html">Contact</a></li>
+          </ul>                     
+        </div><!--/.nav-collapse -->
+        <a href="#" id="search-icon">
+          <i class="fa fa-search">            
+          </i>
+        </a>
       </div>     
     </nav>
   </section>
   <!-- END MENU --> 
 
-<!-- Start single page header -->
-  <section id="single-page-header">
-	 
-	<div class="overlay">
-	
-	  <div class="container">
-	  
-        <div class="row">
-			
-          <div class="col-md-6 col-sm-6 col-sm-6">
-            <div class="single-page-header-left">
-              <h2>What we do?</h2>
-              <p>We are online platform that aims to help businesses find the right software solutions by simplifying process of Listing, Reviewing and Comparing Business Software.
-				</p>
+  <!-- Start slider -->
+  <section id="slider">
+    <div class="main-slider">
+      <div class="single-slide">
+        <img src="assets/images/slider-1.jpg" alt="img">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+                  <h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Creative Design & Best Feature</h1>
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">We believe in coming up with innovative ideas to DELIVER excellence in services with a constant accent on quality and customer satisfaction to brighten your business among your competitors.We shape your ideas and serve it in the form of Website and Application to get your best returns.</p>
+                 <!-- <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Read More</a> -->
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                  <img src="assets/images/person1.png" alt="business man">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-6 col-sm-6">
-            <div class="single-page-header-right">
-              <ol class="breadcrumb">
-                <!--<li><a href="#">AllyBase</a></li> -->
-                <li class="active"><b><i>Lauching Soon</i></b></li>
-              </ol>
+        </div>
+      </div>
+      <div class="single-slide">
+        <img src="assets/images/slider-3.jpg" alt="img">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+                  <h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">We are Best Team & Support you always</h1>
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">
+							We follow end-to-end Design & development process with an experienced and professional team
+							who believe in client satisfaction.We’re passionate about what we do and your success is our success
+							
+							</p>
+                  <!--<a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Read More</a> -->
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                  <img src="assets/images/person2.png" alt="business man">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>          
+    </div>
+  </section>
+  <!-- End slider -->
+
+  <!-- Start Feature -->
+  <section id="feature">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Features</h2>
+            <span class="line"></span>
+            <p>
+			Our team is formed from people all around the globe.This helps us in understanding the trending market and use the latest technology keeping our solution cost effective.
+			</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="feature-content">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-leaf feature-icon"></i>
+                  <h4 class="feat-title">Creative Design</h4>
+                  <p>The fact that creative thinking is based on a knowledge of previous work in one's field is the justification for teaching the history and foundations of a given field as a resource for future research and creative work.</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-mobile feature-icon"></i>
+                  <h4 class="feat-title">Responsive Layouts</h4>
+                  <p>We provide web design that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-thumbs-o-up feature-icon"></i>
+                  <h4 class="feat-title">Great Features</h4>
+                  <p>We are reliable as our designed product loads instantly.Additionally to instant loading, users also get lightning-like interactions. 
+					For engagement,our designed product really looks like a native product, so it is natural in terms of the mobile user experience.</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-gears feature-icon"></i>
+                  <h4 class="feat-title">Multiple Options</h4>
+                  <p>We offer mutiple solution for the same requirement and also provide the pros and cons and let client take the decision of which way they want to design.</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-code feature-icon"></i>
+                  <h4 class="feat-title">Quality Code</h4>
+                  <p>We utilize tools which helps in maintaining high level quality code.We also have a peer team which audits the code quality.</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="single-feature wow zoomIn">
+                  <i class="fa fa-smile-o feature-icon"></i>
+                  <h4 class="feat-title">Awesome Support</h4>
+                  <p>Although we respect work-life balance for our employees, hence we don't provide 24*7 support, but we see to it that our client is supported at the times when needed. </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- End single page header -->
+  <!-- End Feature -->
 
-  <section id="contact">
-     <div class="container">
-       <div class="row">
-         <div class="col-md-12">
-           <div class="cotact-area">
-             <div class="row">
-				 <div class="col-md-12">
-				   <div class="title-area">
-					  <h2 class="title">First 1000 business get a bonanza deal</h2>
-					  <span class="line"></span>
-					 <p>Please fill form to know deal thats worth.</p>
-					</div>
-				 </div>
-               <div class="col-md-4">
-			   <div class="contact-area-left">
-					<h4>Why List With Us?</h4>
-					</br>
-					 <address class="single-address">
-					  <p>Investors and Strategic Marketing Partners Inlined</p>
-					  <p>Platform designed to reach target audience</p>
-					  <p>Analytics driven recommendation</p>
-					  <p>Advertise and Promotional Support</p>
-					  <p>Cost Effective</p>
-					  <p> Many more to come</p>
-                   </address> 
-				   <br/>
-				</div>
-               </div>
-                <div class="col-md-8">
-                 <div class="contact-area-right">
-					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfcPhR9ImLIQynjoWJZ_1UH1pXA3YuRD7VI8ay6_PRXi4g20Q/viewform?embedded=true" width="100%" height="891" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-					</div>
-               </div> 
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
+  <!-- Start about  -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">About us</h2>
+            <span class="line"></span>
+            <p>Our work defines us.Get in touch with us to find more about us.</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="about-content">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="our-skill">
+                  <h3>Our Skills</h3>                  
+                  <div class="our-skill-content">
+                  <p>Capability in wide diversity.Our team can manage all web development and standalone projects in different technologies.</p>
+                    <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="100">
+                        <span class="progress-title">Html5</span>
+                      </div>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="85">
+                        <span class="progress-title">Css3</span>
+                      </div>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="70">
+                        <span class="progress-title">JQuery</span>
+                      </div>
+                  </div>
+				   <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="70">
+                        <span class="progress-title">Java</span>
+                      </div>
+                  </div>
+				  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="70">
+                        <span class="progress-title">.Net</span>
+                      </div>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="70">
+                        <span class="progress-title">wordPress</span>
+                      </div>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="70">
+                        <span class="progress-title">Php</span>
+                      </div>
+                  </div>
+                  
+                  </div>                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="why-choose-us">
+                  <h3>Why Choose Us?</h3>
+                  <div class="panel-group why-choose-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            Awesome Design Layout <span class="fa fa-minus-square"></span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                        <img class="why-choose-img" src="assets/images/testi1.jpg" alt="img">
+                         <p> We have team of experienced people who can undertake any challenging work and can provide quality and on-time delivery.</p>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- <div class="panel panel-default ">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            Quality Coding <span class="fa fa-plus-square"></span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                         <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                        </div>
+                      </div>
+                    </div> -->
+                  <!--  <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                            Great Support <span class="fa fa-plus-square"></span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <!-- End contact section  -->
+  <!-- end about -->
 
+  <!-- Start counter -->
+  <section id="counter">
+    <div class="counter-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="counter-area">
+              <div class="row">
+                <!-- Start single counter -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="single-counter">
+                    <div class="counter-icon">
+                      <i class="fa fa-suitcase"></i>
+                    </div>
+                    <div class="counter-no counter">
+                      569
+                    </div>
+                    <div class="counter-label">
+                      Projects
+                    </div>
+                  </div>
+                </div>
+                <!-- End single counter -->
+                <!-- Start single counter -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="single-counter">
+                    <div class="counter-icon">
+                      <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div class="counter-no counter">
+                      5275
+                    </div>
+                    <div class="counter-label">
+                      Hours Work
+                    </div>
+                  </div>
+                </div>
+                <!-- End single counter -->
+                <!-- Start single counter -->
+               <!-- <div class="col-md-3 col-sm-6">
+                 <div class="single-counter">
+                    <div class="counter-icon">
+                      <i class="fa fa-trophy"></i>
+                    </div>
+                    <div class="counter-no counter">
+                      350
+                    </div>
+                    <div class="counter-label">
+                      Awards
+                    </div>
+                  </div>
+                </div> -->
+                <!-- End single counter -->
+                <!-- Start single counter -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="single-counter">
+                    <div class="counter-icon">
+                      <i class="fa fa-users"></i>
+                    </div>
+                    <div class="counter-no counter">
+                      475
+                    </div>
+                    <div class="counter-label">
+                      Clients
+                    </div>
+                  </div>
+                </div>
+                <!-- End single counter -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End counter -->
+
+
+  <!-- Start Service -->
+  <section id="service">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Our Services</h2>
+            <span class="line"></span>
+            <p>We cater wide range of projects out of which majority of projects are from below criteria</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="service-content">
+            <div class="row">
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-desktop service-icon"></i>
+                  <h4 class="service-title">Web Development</h4>
+                  <p>Our creative web development team are enthusiastic to provide good online presence and grow your business on the internet</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-paw service-icon"></i>
+                  <h4 class="service-title">Digital Design</h4>
+                  <p>We build CMS Design that makes easier to update your business website content on regular basis and maintain it from your end</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-magic service-icon"></i>
+                  <h4 class="service-title">Mobile Vs Responsive</h4>
+                  <p>We highly recommend taking benefit of today's smartphones & tablets in reaching customers with mobile and responsive web design.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-shopping-cart service-icon"></i>
+                  <h4 class="service-title">E-commerce</h4>
+                  <p>We develop affordable ecommerce website design for businesses all around world to successfully sell products and services online..</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-mobile service-icon"></i>
+                  <h4 class="service-title">Pay Per Click Marketing</h4>
+                  <p>Our well focused managed PPC campaign marketing services kick start to gain traffic and deliver conversion immediately.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-rocket service-icon"></i>
+                  <h4 class="service-title">S.E.O</h4>
+                  <p>We help businesses start getting more results and reach new customers online with our natural and organic SEO services.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service -->
+
+  <!-- Start Pricing table -->
+  <!--<section id="pricing-table">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Our Pricing Tables</h2>
+            <span class="line"></span>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="pricing-table-content">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-table-price wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                  <div class="price-header">
+                    <span class="price-title">Basic</span>
+                    <div class="price">
+                      <sup class="price-up">$</sup>
+                      25
+                      <span class="price-down">/mo</span>
+                    </div>
+                  </div>
+                  <div class="price-article">
+                    <ul>
+                      <li>2GB Space</li>
+                      <li>10GB Bandwidth</li>
+                      <li>Free Domain</li>
+                      <li>Free Email</li>
+                      <li>Unlimited Support</li>
+                    </ul>
+                  </div>
+                  <div class="price-footer">
+                    <a class="purchase-btn" href="#">Purchase</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-table-price wow fadeInUp" data-wow-duration="0.75s" data-wow-delay="0.75s">
+                  <div class="price-header">
+                    <span class="price-title">Advanced</span>
+                    <div class="price">
+                      <sup class="price-up">$</sup>
+                      50
+                      <span class="price-down">/mo</span>
+                    </div>
+                  </div>
+                  <div class="price-article">
+                    <ul>
+                      <li>2GB Space</li>
+                      <li>10GB Bandwidth</li>
+                      <li>Free Domain</li>
+                      <li>Free Email</li>
+                      <li>Unlimited Support</li>
+                    </ul>
+                  </div>
+                  <div class="price-footer">
+                    <a class="purchase-btn" href="#">Purchase</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-table-price featured-price wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                  <div class="price-header">
+                    <span class="price-title">Professional</span>
+                    <div class="price">
+                      <sup class="price-up">$</sup>
+                      100
+                      <span class="price-down">/mo</span>
+                    </div>
+                  </div>
+                  <div class="price-article">
+                    <ul>
+                      <li>2GB Space</li>
+                      <li>10GB Bandwidth</li>
+                      <li>Free Domain</li>
+                      <li>Free Email</li>
+                      <li>Unlimited Support</li>
+                    </ul>
+                  </div>
+                  <div class="price-footer">
+                    <a class="purchase-btn" href="#">Purchase</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-table-price wow fadeInUp" data-wow-duration="1.15s" data-wow-delay="1.15s">
+                  <div class="price-header">
+                    <span class="price-title">Exclusive</span>
+                    <div class="price">
+                      <sup class="price-up">$</sup>
+                      125
+                      <span class="price-down">/mo</span>
+                    </div>
+                  </div>
+                  <div class="price-article">
+                    <ul>
+                      <li>2GB Space</li>
+                      <li>10GB Bandwidth</li>
+                      <li>Free Domain</li>
+                      <li>Free Email</li>
+                      <li>Unlimited Support</li>
+                    </ul>
+                  </div>
+                  <div class="price-footer">
+                    <a class="purchase-btn" href="#">Purchase</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End Pricing table -->  
+
+  <!-- Start Pricing table -->
+  <section id="our-team">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Our Team</h2>
+            <span class="line"></span>
+            <p>We are a large and talented professional team of business analyst, project managers, designers, developers and SEO specialists committed to provide excellence across a wide range of website design, bespoke development, Ecommerce and online marketing projects.
+
+			We deliver brilliant work using the latest technologies that are focussed on gaining the highest returns for your business. We have helped businesses to achieve their goals and take it to the next level. We have an impressive portfolio of our existing work and all of them are happy to recommend us. </p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="our-team-content">
+            <div class="row">
+              <!-- Start single team member -->
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-team-member">
+                 <div class="team-member-img">
+                   <img src="assets/images/jaspal.png" alt="team member img">
+                 </div>
+                 <div class="team-member-name">
+                   <p>Jaspal Singh</p>
+                   <span>Executing Officer</span>
+                 </div>
+                 <p>Has skills of leadership and dynamism necessary to provide a quality service to the clients and efficiency to drive our products competitive advantage. Also posses a comprehensive knowledge of IT industry and its procedure, as well as having the ability to meet deadlines and targets, think smart and act fast.
+
+				Also strive to be the best and take every challenging opportunity as a chance to learn and grow.</p>
+                 <div class="team-member-link">
+                  <!--  <a href="#"><i class="fa fa-facebook"></i></a> -->
+                 <!--  <a href="#"><i class="fa fa-twitter"></i></a> -->
+                   <a href="https://www.linkedin.com/in/jaspal-singh-bbab5546"><i class="fa fa-linkedin"></i></a>
+                 </div>
+                </div>
+              </div>
+              <!-- Start single team member -->
+              <!-- Start single team member -->
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-team-member">
+                 <div class="team-member-img">
+                   <img src="assets/images/team-member-3.png" alt="team member img">
+                 </div>
+                 <div class="team-member-name">
+                   <p>Gunjan Kr Choudhary</p>
+                   <span>Sales & Marketing Manager</span>
+                 </div>
+                 <p>Very much client oriented.Has experience in sales and marketing of product in automobile industry.Now getting in to get his hands dirty and accept the challenge in software industry</p>
+                 <div class="team-member-link">
+                   <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+                   <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+                   <a href="https://www.linkedin.com/in/gunjan-choudhary-421659128/"><i class="fa fa-linkedin"></i></a>
+                 </div>
+                </div>
+              </div>
+              <!-- Start single team member -->
+              <!-- Start single team member -->
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-team-member">
+                 <div class="team-member-img">
+                    <img src="assets/images/neha.png" alt="team member img"> 
+                 </div>
+                 <div class="team-member-name">
+                   <p>Neha Bhardwaj</p>
+                   <span>Technical Officer</span>
+                 </div>
+                 <p>She has great skills in analysing and suggesting platform which is the effective solution to fulfill client requirement.Also provides direction to the team and is a strong pillar to this company.</p>
+                 <div class="team-member-link">
+                  <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+                   <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+                   <a href="https://www.linkedin.com/in/neha-bhardwaj-0b87b548/"><i class="fa fa-linkedin"></i></a>
+                 </div>
+                </div>
+              </div>
+              <!-- Start single team member -->
+              <!-- Start single team member -->
+              <!--<div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-team-member">
+                 <div class="team-member-img">
+                   <img src="assets/images/team-member-1.png" alt="team member img">
+                 </div>
+                 <div class="team-member-name">
+                   <p>Bernice Neumann</p>
+                   <span>Designer</span>
+                 </div>
+                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                 <div class="team-member-link">
+                   <a href="#"><i class="fa fa-facebook"></i></a>
+                   <a href="#"><i class="fa fa-twitter"></i></a>
+                   <a href="#"><i class="fa fa-linkedin"></i></a>
+                 </div>
+                </div>
+              </div> -->
+              <!-- Start single team member -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing table -->
   
+  <!-- Start Testimonial section -->
+  <section id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title-area">
+                <h2 class="title">Whats Team Say</h2>
+                <span class="line"></span>           
+              </div>
+            </div>
+            <div class="col-md-12">
+              <!-- Start testimonial slider -->
+              <div class="testimonial-slider">
+                <!-- Start single slider -->
+                <div class="single-slider">
+                  <div class="testimonial-img">
+                    <img src="assets/images/testi1.jpg" alt="testimonial image">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>We have team of experienced people who can undertake any challenging work and can provide quality and on-time delivery..</p>
+                    <h6>Achal Soni, <span>Developer</span></h6>
+                  </div>
+                </div>
+                <!-- Start single slider -->
+                <div class="single-slider">
+                  <div class="testimonial-img">
+                    <img src="assets/images/jaspal.png" alt="testimonial image">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>We leave no ball unturned to get the best out of our team and provide a satisfactory end result to our customers.</p>
+                    <h6>Jaspal Singh, <span>Executing Officer</span></h6>
+                  </div>
+                </div>
+                <!-- Start single slider -->
+                <div class="single-slider">
+                  <div class="testimonial-img">
+                    <img src="assets/images/neha.png" alt="testimonial image">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>It feels great to be a part of such company where we get an oppurtunity to learn while we work.Really nice place to work in.</p>
+                    <h6>Neha Bhardwaj, <span>Developer</span></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6"></div>        
+      </div>
+    </div>
+  </section>
+  <!-- End Testimonial section -->
+
+  <!-- Start Clients brand -->
+  <section id="clients-brand">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+         <!-- <div class="clients-brand-area">
+            <ul class="clients-brand-slide">
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/amazon.png" alt="img">
+                </div>
+              </li>
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/discovery.png" alt="img">
+                </div>
+              </li>
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/envato.png" alt="img">
+                </div>
+              </li>
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/tuenti.png" alt="img">
+                </div>
+              </li>
+               <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/amazon.png" alt="img">
+                </div>
+              </li>
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/discovery.png" alt="img">
+                </div>
+              </li>
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/envato.png" alt="img">
+                </div>
+              </li>
+              <li class="col-md-3">
+                <div class="single-brand">
+                  <img src="assets/images/tuenti.png" alt="img">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- End Clients brand -->
+
+  <!-- Start latest news -->
+ <!-- <section id="latest-news">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Latest News</h2>
+            <span class="line"></span>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="latest-news-content">
+            <div class="row"> -->
+              <!-- start single latest news -->
+            <!--  <div class="col-md-4">
+                <article class="blog-news-single">
+                  <div class="blog-news-img">
+                    <a href="blog-single-with-right-sidebar.html"><img src="assets/images/blog-img-1.jpg" alt="image"></a>
+                  </div>
+                  <div class="blog-news-title">
+                    <h2><a href="blog-single-with-right-sidebar.html">All about writing story</a></h2>
+                    <p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span></p>
+                  </div>
+                  <div class="blog-news-details">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div> -->
+              <!-- start single latest news -->
+            <!--  <div class="col-md-4">
+                <article class="blog-news-single">
+                  <div class="blog-news-img">
+                    <a href="blog-single-with-right-sidebar.html"><img src="assets/images/blog-img-2.jpg" alt="image"></a>
+                  </div>
+                  <div class="blog-news-title">
+                    <h2><a href="blog-single-with-right-sidebar.html">Best Mobile Device</a></h2>
+                    <p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span></p>
+                  </div>
+                  <div class="blog-news-details">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div> -->
+              <!-- start single latest news -->
+          <!--    <div class="col-md-4">
+                <article class="blog-news-single">
+                  <div class="blog-news-img">
+                    <a href="blog-single-with-right-sidebar.html"><img src="assets/images/blog-img-3.jpg" alt="image"></a>
+                  </div>
+                  <div class="blog-news-title">
+                    <h2><a href="blog-single-with-right-sidebar.html">Personal Note Details</a></h2>
+                    <p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span></p>
+                  </div>
+                  <div class="blog-news-details">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                    <a class="blog-more-btn" href="blog-single-with-right-sidebar.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End latest news -->
+
+  <!-- Start subscribe us -->
+  <!--<section id="subscribe">
+    <div class="subscribe-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="subscribe-area">
+              <h2 class="wow fadeInUp">Subscribe Newsletter</h2>
+              <form action="" class="subscrib-form wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <input type="text" placeholder="Enter Your E-mail..">
+                <button class="subscribe-btn" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End subscribe us -->
+
   <!-- Start footer -->
   <footer id="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-6">
           <div class="footer-left">
-            <p>Powered by <a href="http://www.allybase.com/">AllyBase.com</a></p>
+            <p>Designed by <a href="http://www.allybase.com/">AllyBase.com</a></p>
           </div>
         </div>
-       <!-- <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-6">
           <div class="footer-right">
             <a href="index.html"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -163,7 +1037,7 @@
             <a href="#"><i class="fa fa-linkedin"></i></a>
             <a href="#"><i class="fa fa-pinterest"></i></a>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   </footer>
